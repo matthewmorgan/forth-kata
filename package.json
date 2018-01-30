@@ -1,0 +1,61 @@
+{
+  "name": "forth-kata",
+  "version": "0.0.0",
+  "description": "Forth Kata inspired by exercism.io",
+  "author": "Matt Morgan",
+  "private": false,
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/matthewmorgan/forth-kata.git"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "eslint-plugin-import": "^2.2.0",
+    "eslint-plugin-jsx-a11y": "^5.0.1",
+    "eslint-plugin-react": "^7.0.1",
+    "jest": "^20.0.1",
+    "jest-cli": "^20.0.4"
+  },
+  "jest": {
+    "modulePathIgnorePatterns": [
+      "package.json"
+    ]
+  },
+  "scripts": {
+    "test": "jest ./*",
+    "watch": "jest --watch ./*",
+    "watch:cover": "jest --coverage --watch ./*",
+    "lint": "eslint .",
+    "lint-test": "eslint . && jest --no-cache ./* "
+  },
+  "eslintConfig": {
+    "parserOptions": {
+      "ecmaVersion": 6,
+      "sourceType": "module"
+    },
+    "env": {
+      "es6": true,
+      "node": true,
+      "jest": true
+    },
+    "extends": "airbnb",
+    "rules": {
+      "import/no-unresolved": "off",
+      "import/extensions": "off"
+    }
+  },
+  "engines": {
+    "node": ">=9.4"
+  },
+  "licenses": [
+    "MIT"
+  ],
+  "dependencies": {
+    "eslint-plugin-standard": "^3.0.1"
+  },
+  "bugs": {
+    "url": "https://github.com/matthewmorgan/forth-kata/issues"
+  },
+  "homepage": "https://github.com/matthewmorgan/forth-kata#readme",
+  "main": "forth.js"
+}
